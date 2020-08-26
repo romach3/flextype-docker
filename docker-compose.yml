@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  flextype-dev:
+    build:
+      context: .
+      args:
+        FLEXTYPE_SOURCE_URL: https://github.com/flextype/flextype/releases/download/v0.9.11/flextype-cms-0.9.11.zip
+    hostname: flextype-dev
+    ports:
+      - "8080:80"
+
+
